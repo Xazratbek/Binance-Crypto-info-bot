@@ -40,21 +40,23 @@ async def crypto_pair_info(message: types.Message):
 
         elif(message.text == "BTCUSDT 💲" or message.text == "BTCUSDT" or message.text == "btcusdt"):
             await message.reply(func.get_response("BTCUSDT"))
-            new_message = await message.answer("BTCUSDT-ning 💲 ayni vaqtdagi diagrammasi yuborilmoqda kuting...")
-            url = f"https://api.screenshotbird.com/screenshot?token=nVAxLrfJZlYYStC86ENZ9TLO&url=https://www.binance.com/ru/trade/BTCUSDT&fresh=true&block_ads=true&block_cookie_banners=true&block_tracking=true"
-            r = requests.get(url)
-            res = r.json()
-            await message.reply_photo(res['url'],caption="BTCUSDT-ning 💲 ayni vaqtdagi diagrammasi rasmi 📊📸")
-            await bot.delete_message(message.from_user.id,message_id=new_message.message_id)
+#             Pastdagi kod Binance.comdan BTCUSDT-ning 💲 ayni vaqtdagi diagrammasini yuborish uchun edi ammo bu botni ishlashiga ta'sir qilgani uchun o'chirib qo'yildi
+#             new_message = await message.answer("BTCUSDT-ning 💲 ayni vaqtdagi diagrammasi yuborilmoqda kuting...")
+#             url = f"https://api.screenshotbird.com/screenshot?token=nVAxLrfJZlYYStC86ENZ9TLO&url=https://www.binance.com/ru/trade/BTCUSDT&fresh=true&block_ads=true&block_cookie_banners=true&block_tracking=true"
+#             r = requests.get(url)
+#             res = r.json()
+#             await message.reply_photo(res['url'],caption="BTCUSDT-ning 💲 ayni vaqtdagi diagrammasi rasmi 📊📸")
+#             await bot.delete_message(message.from_user.id,message_id=new_message.message_id)
 
         elif (message.text == "ETHUSDT 💲" or message.text == "ETHUSDT" or message.text == "ethusdt"):
             await message.reply(func.get_response("ETHUSDT"))
-            new_message = await message.answer("ETHUSDT-ning 💲 ayni vaqtdagi diagrammasi yuborilmoqda kuting...")
-            url = f"https://api.screenshotbird.com/screenshot?token=nVAxLrfJZlYYStC86ENZ9TLO&url=https://www.binance.com/ru/trade/ETHUSDT&fresh=true&block_ads=true&block_cookie_banners=true&block_tracking=true"
-            r = requests.get(url)
-            res = r.json()
-            await message.reply_photo(res['url'],caption="ETHUSDT-ning 💲 ayni vaqtdagi diagrammasi rasmi 📊📸")
-            await bot.delete_message(message.from_user.id,message_id=new_message.message_id)
+#           Pastdagi kod Binance.comdan BTCUSDT-ning 💲 ayni vaqtdagi diagrammasini yuborish uchun edi ammo bu botni ishlashiga ta'sir qilgani uchun o'chirib qo'yildi
+#             new_message = await message.answer("ETHUSDT-ning 💲 ayni vaqtdagi diagrammasi yuborilmoqda kuting...")
+#             url = f"https://api.screenshotbird.com/screenshot?token=nVAxLrfJZlYYStC86ENZ9TLO&url=https://www.binance.com/ru/trade/ETHUSDT&fresh=true&block_ads=true&block_cookie_banners=true&block_tracking=true"
+#             r = requests.get(url)
+#             res = r.json()
+#             await message.reply_photo(res['url'],caption="ETHUSDT-ning 💲 ayni vaqtdagi diagrammasi rasmi 📊📸")
+#             await bot.delete_message(message.from_user.id,message_id=new_message.message_id)
 
 
         elif message.text == "BNBUSDT 💲":
