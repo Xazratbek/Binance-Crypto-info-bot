@@ -7,4 +7,4 @@ def get_response(crypto_pair):
     data = requests.get(key)
     data = data.json()
     if data['symbol']:
-        return (f"Valyuta juftligi: {data['symbol']} 💸\n\nXozirgi narxi: {data['price']} 💲\n\nXozirgi vaqt: {time.hour}:{time.minute}:{time.second} ⌚️")
+        return (f"Valyuta juftligi: {data['symbol']} 💸\n\nXozirgi narxi: {data['price']} 💲\n\nSo'rov yuborilgan vaqt: {time.hour}:{time.minute}:{time.second} ⌚️")
